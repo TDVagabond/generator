@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Random Generator</title>
+
+		<style>
+
+			html
+			{
+				height:100%;
+			}
+
+			body
+			{
+				background:#000;
+				color:#fff;
+				font-family:Georgia,serif;
+				height:100%;
+				margin:0px;
+			}
+
+			a
+			{
+				color:#ddd;
+				text-decoration:none;
+				outline:none;
+			}
+
+			a:hover
+			{
+				color:#fff;
+				text-shadow:0px 0px 4px #999;
+			}
+
+			#wrap
+			{
+				display:table;
+				width:100%;
+				height:100%;
+				margin-bottom:-96px;
+				min-height:96px;
+			}
+
+			#text
+			{
+				font-size:25px;
+				display:table-cell;
+				vertical-align:middle;
+				text-align:center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="wrap"><div id="text"></div></div>
+		<script>
+			function Choose(arr) {return arr[Math.floor(Math.random()*arr.length)];}
+			function Generate()
+			{
+				document.getElementById('text').innerHTML=('<a href="javascript:Generate();">'+
+				'Well '+
+				Choose(['slap','spank','smack','pinch','rub','mock','squeeze','suck','bite','bite off','chew','lick','flap','stroke','touch','smell','sniff','jizz on','rub one out on','wank to','shit on','piss on','paint','fist','scratch','screw','kiss','finger','jiggle','tickle','hold','grab','blow on','scream at','befriend','write a book about','sue','marry','make love to','pepper','twist','tenderize','spit on','fart on','meet','spend a charming afternoon with','introduce your sister to','sandwich','write fanfic about','blog about','let\'s have a minute of silence for','listen to','google','stick your dick in','prance around in','make your way inside','plunder','swiggity','eat','stuff','hump','humiliate','blow','blow up','fancy','berate','rate','rustle'])+
+				' my '+
+				Choose([,'mouth','face','crotch','face','beard','moustache','buns','chest','butt','buttocks','nips','nipples',,'snatch',,'fanny','skirt','pants','panties','loins',,'shorts','jimmies','crack','thighs','rump','arse','feet',,'cat','horse','goat','dog','parrot','steak','cheese','hose','goatee','sideburns','sandwich','booty','mother','father','grand-parents','neighbor','shiggity','dinner','shizzle','bunny','evil twin','thing','pickle','nutsack','cookies'])+
+				' and call me '+
+				Choose(['Shirley','Michael','Peter','Justin','Jesper','Casper','Sally','Dolly','Pedro','Jose','Juanita','Sharon','Geoffrey','Susan','Mary','Stanley','Bradley','Barney','Brandon','Milford','Robert','Rosie','Steve','Patrick','Jeffrey','Brian','David','Santa','Batman','mommy','daddy','grandpa','grandma','auntie','uncle','pretty','maybe','when you\'re home','when you\'re done','darling','fabulous','Ringo','Marty'])+
+				'.'
+				+
+				'</a>'
+				);
+			}
+			Generate();
+		</script>
+	</body>
+</html>
